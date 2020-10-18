@@ -1,1 +1,43 @@
-<div id="app"></div>
+<html>
+
+<head>
+    <title>
+        Go-Fiber Assignment
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <div class="tab">
+        <button class="tablinks" id="btnTabphone" onclick="openTab(event, 'Phone Numbers')">Phone Numbers</button>
+        <button class="tablinks" onclick="openTab(event, 'Text Messaging')">Text Messaging</button>
+    </div>
+
+    <div id="Phone Numbers" class="tabcontent">
+        <div class="searchText">
+            <div class="searchContent">
+                <input type="text" onkeyup="search(this,'tblPhoneNumber')" placeholder="Search.." id="searchPhone" name="searchPhone">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+        <table id="tblPhoneNumber"></table>
+    </div>
+
+    <div id="Text Messaging" class="tabcontent">
+        <div class="searchText">
+            <input type="text" id="searchMsg" onkeyup="search(this,'tblTextMessaging')" placeholder="Search.." name="searchMsg">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <table id="tblTextMessaging"></table>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>

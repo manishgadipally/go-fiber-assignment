@@ -1,3 +1,112 @@
-h1, h2 {
-  font-family: Lato;
+h1,
+h2 {
+    font-family: Lato;
+}
+
+.tab {
+    overflow: hidden;
+}
+
+
+/* Style the buttons inside the tab */
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+
+/* Create an active/current tablink class */
+
+.tab button.active {
+    color: rgba(12, 155, 250, 0.603);
+    border-bottom: 3px solid rgb(12, 204, 238);
+}
+
+
+/* Style the tab content */
+
+.tabcontent {
+    display: none;
+    background-color: whitesmoke;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+table,
+td,
+th {
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    padding: 16px;
+    background-color: white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    background-color: whitesmoke;
+    border-top: 1px solid #ddd;
+}
+
+.searchText {
+    padding: 50px;
+}
+
+.searchText input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+}
+
+.searchText button {
+    float: left;
+    width: 20%;
+    height: 43px;
+    padding: 10px;
+    background: #ddd;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+.searchText button:hover {
+    background: #ddd;
+}
+
+.searchText::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.searchContent {
+    float: right;
+    margin-right: 43px;
+}
+
+td:last-child {
+    text-align: center;
 }
